@@ -1,0 +1,130 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background-color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-logo_texto {
+    font-family: 'Arial Black', sans-serif;
+    color: #ffffff;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.header-logo_texto:hover {
+    color: #9ea1a4;
+}
+
+/* Nav */
+.nav-menu__link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-weight: 500;
+    margin-right: 15px;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s, color 0.3s;
+}
+
+.nav-menu__link:hover,
+.nav-menu__link--active {
+    color: #ffffff !important;
+    border-bottom-color: #007bff;
+}
+
+.nav-menu_boton {
+    background-color: #28a745;
+    color: #ffffff; 
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu_boton:hover {
+    background-color: #218838;
+}
+
+/* Main */
+.main-content {
+    /* Padding-top compensa la altura del Nav fijo */
+    padding-top: 100px; 
+    /* Padding-bottom estándar, ya que el footer se desplaza */
+    padding-bottom: 50px; 
+    /* Ocupa el espacio restante en body:flex */
+    flex-grow: 1; 
+    background-color: #f8f9fa;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(135deg, #1c1c1c 0%, #333333 100%); 
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section__titulo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Productos */
+
+.card-product {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; 
+    margin-bottom: 25px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-product:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-product__body-text {
+    color: #495057; 
+    font-size: 0.95rem;
+    flex-grow: 1; 
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #cccccc;
+    padding: 15px 0; 
+    font-size: 0.85rem;
+    margin-top: auto; 
+}
+
+.footer__link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: #007bff;
+}
